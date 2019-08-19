@@ -13,25 +13,8 @@ Model specifications -
 4. Backpropagation 
 
 approach for SGD
-procedure SGD(Training data D, test data Dt)
-2: Initialize parameters ;  . Use either RANDOM or ZERO from Section 2.2.1
-3: for e 2 f1; 2; : : : ;Eg do . For each epoch
-4: for (x; y) 2 D do . For each training example
-5: Compute neural network layers:
-6: o = object(x; a; b; z; ^y; J) = NNFORWARD(x; y;; )
-7: Compute gradients via backprop:
-8:
-g = rJ
-g = rJ
-)
-= NNBACKWARD(x; y;; ; o)
-9: Update parameters:
-10:     􀀀 
-g
-11:     􀀀 
-g
-12: Evaluate training mean cross-entropy JD(; )
-13: Evaluate test mean cross-entropy JDt(; )
-14: return parameters ; 
+follow algorithm from wikipedia.
+https://en.wikipedia.org/wiki/Stochastic_gradient_descent
+
 
 
